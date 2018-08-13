@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { WmgMailingListComponent } from './wmg-mailing-list.component';
-import { MailingListComponent } from './mailing-list/mailing-list.component';
+import { OneFormMlComponent } from './one-form-ml/one-form-ml.component';
+import { TwoFormMlComponent } from './two-form-ml/two-form-ml.component';
 
 @NgModule({
   imports: [
+    BrowserModule
   ],
-  declarations: [WmgMailingListComponent, MailingListComponent],
+  declarations: [WmgMailingListComponent, OneFormMlComponent, TwoFormMlComponent],
   exports: [WmgMailingListComponent]
 })
-export class WmgMailingListModule { }
+export class WmgMailingListModule {
+  
+ }

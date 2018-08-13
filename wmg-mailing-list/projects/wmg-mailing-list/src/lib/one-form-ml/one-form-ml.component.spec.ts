@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MailingListComponent } from './mailing-list.component';
+import { OneFormMlComponent } from './one-form-ml.component';
 
-describe('MailingListComponent', () => {
-  let component: MailingListComponent;
-  let fixture: ComponentFixture<MailingListComponent>;
+describe('OneFormMlComponent', () => {
+  let component: OneFormMlComponent;
+  let fixture: ComponentFixture<OneFormMlComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MailingListComponent ]
+      declarations: [ OneFormMlComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MailingListComponent);
+    fixture = TestBed.createComponent(OneFormMlComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

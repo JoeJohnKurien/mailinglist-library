@@ -1,2 +1,9 @@
-<h1>Mailing list Module Works</h1>
-<lib-mailing-list></lib-mailing-list>
+<div class="mailingList-header headerStyles" [innerHTML]="mlistHeader"></div>
+<div class="mailingList-subHeader headerStyles" [innerHTML]="mlistSubHeader"></div>
+<a *ngIf="nodeID" href="/node/{{nodeID}}/edit" target="_blank" class="editmslink">edit</a>
+<div *ngIf="type=='twoForm'" class="mailing-list-outer-wrapper">
+    <lib-one-form-ml></lib-one-form-ml>
+</div>
+<div *ngIf="type=='singleForm'" class="mailing-list-outer-wrapper">
+    <lib-two-form-ml></lib-two-form-ml>
+</div>
